@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<form id="login-form" action="#" method="post" novalidate>
+			<label for="login-email">Email</label>
+			<input type="email" name="email" id="login-email" required />
+			<div id="error-email" class="error"></div>
+
+			<label for="login-password">Contraseña</label>
+			<span id="toggle-password">Mostrar/Ocultar</span>
+			<input
+				type="password"
+				name="password"
+				id="login-password"
+				required
+			/>
+			<div id="error-password" class="error"></div>
+
+			<label for="login-password-confirm">Confirmar contraseña</label>
+			<input
+				type="password"
+				name="password-confirm"
+				id="login-password-confirm"
+				required
+			/>
+			<div id="error-password-confirm" class="error"></div>
+
+			<input type="submit" />
+
+			<div class="flex-center"><span id="action-toggle"></span></div>
+		</form>
+	</body>
+</html>

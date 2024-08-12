@@ -1,0 +1,100 @@
+:root {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: azure;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+}
+
+#login-form {
+	min-width: 350px;
+	width: 40vw;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid grey;
+}
+
+#toggle-password {
+	float: right;
+	position: relative;
+	top: 13px;
+	color: grey;
+	font-size: 0.8em;
+	cursor: pointer;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom-color 0.25s ease;
+}
+
+#toggle-password:hover {
+	border-bottom-color: grey;
+}
+
+input {
+	width: 100%;
+	margin: 10px 0;
+	padding: 8px;
+	border-radius: 3px;
+	border: 1px solid grey;
+}
+
+label {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+input[type="submit"] {
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
+	border: none;
+	margin: 30px 0 0;
+	background-color: hsl(219, 74%, 65%);
+	transition: background-color 0.5s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: hsl(219, 74%, 55%);
+}
+
+.error {
+	color: red;
+	font-size: 0.9em;
+}
+
+#error-password ul {
+	margin-top: 5px;
+	list-style-position: inside;
+}
+
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#action-toggle {
+	cursor: pointer;
+	margin-top: 10px;
+	color: hsl(219, 74%, 65%);
+	text-decoration: underline;
+	font-size: 0.8em;
+}
+
+#action-toggle:hover {
+	color: hsl(219, 74%, 55%);
+}
